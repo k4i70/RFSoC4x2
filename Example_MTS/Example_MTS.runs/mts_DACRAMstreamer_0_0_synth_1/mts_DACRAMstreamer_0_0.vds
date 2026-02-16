@@ -1,0 +1,357 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 14 07:15:51 2025
+# Process ID: 8416
+# Current directory: C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_DACRAMstreamer_0_0_synth_1
+# Command line: vivado.exe -log mts_DACRAMstreamer_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mts_DACRAMstreamer_0_0.tcl
+# Log file: C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_DACRAMstreamer_0_0_synth_1/mts_DACRAMstreamer_0_0.vds
+# Journal file: C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_DACRAMstreamer_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-IGU5KAN, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 4, Host memory: 17133 MB
+#-----------------------------------------------------------
+source mts_DACRAMstreamer_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1331.043 ; gain = 573.113
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.cache/ip 
+Command: synth_design -top mts_DACRAMstreamer_0_0 -part xczu48dr-fsvg1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-86] Your Synthesis license expires in 29 day(s)
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8664
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1734.480 ; gain = 271.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mts_DACRAMstreamer_0_0' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_DACRAMstreamer_0_0/synth/mts_DACRAMstreamer_0_0.vhd:75]
+	Parameter DWIDTH bound to: 256 - type: integer 
+	Parameter MEM_SIZE_BYTES bound to: 131072 - type: integer 
+	Parameter USE_VECTOR_COUNT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'DACRAMstreamer' declared at 'C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/ip/rtl/DACRAMstreamer.v:7' bound to instance 'U0' of component 'DACRAMstreamer' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_DACRAMstreamer_0_0/synth/mts_DACRAMstreamer_0_0.vhd:128]
+INFO: [Synth 8-6157] synthesizing module 'DACRAMstreamer' [C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/ip/rtl/DACRAMstreamer.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'DACRAMstreamer' (0#1) [C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/ip/rtl/DACRAMstreamer.v:7]
+INFO: [Synth 8-256] done synthesizing module 'mts_DACRAMstreamer_0_0' (0#1) [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_DACRAMstreamer_0_0/synth/mts_DACRAMstreamer_0_0.vhd:75]
+WARNING: [Synth 8-6014] Unused sequential element vcnt_reg was removed.  [C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/ip/rtl/DACRAMstreamer.v:81]
+WARNING: [Synth 8-7129] Port axis_tready in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[11] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[10] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[9] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[8] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[7] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[6] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[5] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[4] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[3] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[2] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[1] in module DACRAMstreamer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[0] in module DACRAMstreamer is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1795.898 ; gain = 332.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1818.793 ; gain = 355.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1818.793 ; gain = 355.633
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1818.793 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1919.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.254 . Memory (MB): peak = 1937.871 ; gain = 17.879
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:50 . Memory (MB): peak = 1937.871 ; gain = 474.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:50 . Memory (MB): peak = 1937.871 ; gain = 474.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:50 . Memory (MB): peak = 1937.871 ; gain = 474.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1937.871 ; gain = 474.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[255] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[254] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[253] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[252] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[251] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[250] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[249] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[248] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[247] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[246] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[245] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[244] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[243] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[242] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[241] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[240] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[239] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[238] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[237] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[236] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[235] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[234] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[233] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[232] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[231] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[230] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[229] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[228] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[227] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[226] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[225] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[224] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[223] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[222] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[221] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[220] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[219] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[218] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[217] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[216] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[215] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[214] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[213] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[212] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[211] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[210] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[209] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[208] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[207] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[206] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[205] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[204] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[203] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[202] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[201] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[200] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[199] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[198] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[197] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[196] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[195] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[194] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[193] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[192] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[191] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[190] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[189] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[188] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[187] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[186] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[185] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[184] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[183] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[182] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[181] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[180] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[179] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[178] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[177] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[176] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[175] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[174] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[173] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[172] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[171] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[170] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[169] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[168] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[167] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[166] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[165] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[164] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[163] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[162] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[161] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[160] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[159] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[158] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[157] driven by constant 0
+INFO: [Synth 8-3917] design mts_DACRAMstreamer_0_0 has port portA_cpu_wdata[156] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port axis_tready in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[11] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[10] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[9] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[8] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[7] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[6] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[5] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[4] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[3] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[2] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[1] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port numSampleVectors[0] in module mts_DACRAMstreamer_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:58 . Memory (MB): peak = 1937.871 ; gain = 474.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:35 . Memory (MB): peak = 2314.898 ; gain = 851.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:35 . Memory (MB): peak = 2315.047 ; gain = 851.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:36 . Memory (MB): peak = 2334.152 ; gain = 870.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:51 . Memory (MB): peak = 2341.141 ; gain = 877.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:51 . Memory (MB): peak = 2341.141 ; gain = 877.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:51 . Memory (MB): peak = 2341.141 ; gain = 877.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:51 . Memory (MB): peak = 2341.141 ; gain = 877.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:51 . Memory (MB): peak = 2341.141 ; gain = 877.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:51 . Memory (MB): peak = 2341.141 ; gain = 877.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     4|
+|2     |LUT1   |     2|
+|3     |LUT2   |     2|
+|4     |LUT3   |     1|
+|5     |FDRE   |   285|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:51 . Memory (MB): peak = 2341.141 ; gain = 877.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:01:42 . Memory (MB): peak = 2341.141 ; gain = 758.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:52 . Memory (MB): peak = 2341.141 ; gain = 877.980
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2353.207 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2397.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 27183c49
+INFO: [Common 17-83] Releasing license: Synthesis
+125 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:02:37 . Memory (MB): peak = 2397.574 ; gain = 1066.531
+INFO: [Common 17-1381] The checkpoint 'C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_DACRAMstreamer_0_0_synth_1/mts_DACRAMstreamer_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mts_DACRAMstreamer_0_0, cache-ID = fcd53e436cb00324
+INFO: [Common 17-1381] The checkpoint 'C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_DACRAMstreamer_0_0_synth_1/mts_DACRAMstreamer_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mts_DACRAMstreamer_0_0_utilization_synth.rpt -pb mts_DACRAMstreamer_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 14 07:19:04 2025...

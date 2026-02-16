@@ -1,0 +1,338 @@
+
+*** Running vivado
+    with args -log mts_axis_broadcaster_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mts_axis_broadcaster_0_0.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source mts_axis_broadcaster_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1285.316 ; gain = 23.895
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.cache/ip 
+Command: synth_design -top mts_axis_broadcaster_0_0 -part xczu48dr-fsvg1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-86] Your Synthesis license expires in 29 day(s)
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12548
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 1735.609 ; gain = 273.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mts_axis_broadcaster_0_0' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/synth/mts_axis_broadcaster_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_mts_axis_broadcaster_0_0' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/hdl/top_mts_axis_broadcaster_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axis_broadcaster_v1_1_25_core' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ipshared/eb3a/hdl/axis_broadcaster_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (0#1) [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (0#1) [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6155] done synthesizing module 'axis_broadcaster_v1_1_25_core' (0#1) [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ipshared/eb3a/hdl/axis_broadcaster_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'tdata_mts_axis_broadcaster_0_0' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/hdl/tdata_mts_axis_broadcaster_0_0.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'tdata_mts_axis_broadcaster_0_0' (0#1) [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/hdl/tdata_mts_axis_broadcaster_0_0.v:49]
+INFO: [Synth 8-6157] synthesizing module 'tuser_mts_axis_broadcaster_0_0' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/hdl/tuser_mts_axis_broadcaster_0_0.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'tuser_mts_axis_broadcaster_0_0' (0#1) [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/hdl/tuser_mts_axis_broadcaster_0_0.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'top_mts_axis_broadcaster_0_0' (0#1) [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/hdl/top_mts_axis_broadcaster_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'mts_axis_broadcaster_0_0' (0#1) [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/synth/mts_axis_broadcaster_0_0.v:53]
+WARNING: [Synth 8-7129] Port tuser[3] in module tuser_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[2] in module tuser_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[1] in module tuser_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[0] in module tuser_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[511] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[510] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[509] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[508] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[507] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[506] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[505] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[504] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[503] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[502] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[501] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[500] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[499] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[498] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[497] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[496] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[495] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[494] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[493] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[492] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[491] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[490] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[489] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[488] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[487] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[486] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[485] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[484] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[483] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[482] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[481] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[480] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[479] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[478] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[477] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[476] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[475] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[474] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[473] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[472] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[471] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[470] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[469] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[468] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[467] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[466] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[465] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[464] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[463] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[462] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[461] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[460] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[459] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[458] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[457] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[456] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[455] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[454] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[453] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[452] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[451] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[450] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[449] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[448] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[447] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[446] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[445] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[444] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[443] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[442] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[441] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[440] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[439] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[438] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[437] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[436] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[435] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[434] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[433] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[432] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[431] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[430] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[429] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[428] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[427] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[426] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[425] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[424] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[423] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[422] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[421] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[420] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[419] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[418] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[417] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[416] in module tdata_mts_axis_broadcaster_0_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:30 . Memory (MB): peak = 1797.754 ; gain = 335.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:30 . Memory (MB): peak = 1820.656 ; gain = 358.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:30 . Memory (MB): peak = 1820.656 ; gain = 358.305
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 1820.656 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/mts_axis_broadcaster_0_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1914.496 ; gain = 0.004
+Finished Parsing XDC File [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_axis_broadcaster_0_0/mts_axis_broadcaster_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_axis_broadcaster_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_axis_broadcaster_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1914.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.222 . Memory (MB): peak = 1914.496 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1914.496 ; gain = 452.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1914.496 ; gain = 452.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_axis_broadcaster_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1914.496 ; gain = 452.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1914.496 ; gain = 452.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/broadcaster_core/MI_SLOT[0].util_vector2axis' (axis_infrastructure_v1_1_0_util_vector2axis) to 'inst/broadcaster_core/MI_SLOT[1].util_vector2axis'
+INFO: [Synth 8-223] decloning instance 'inst/broadcaster_core/MI_SLOT[0].util_vector2axis' (axis_infrastructure_v1_1_0_util_vector2axis) to 'inst/broadcaster_core/MI_SLOT[2].util_vector2axis'
+INFO: [Synth 8-223] decloning instance 'inst/broadcaster_core/MI_SLOT[0].util_vector2axis' (axis_infrastructure_v1_1_0_util_vector2axis) to 'inst/broadcaster_core/MI_SLOT[3].util_vector2axis'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:01:15 . Memory (MB): peak = 1914.496 ; gain = 452.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:49 . Memory (MB): peak = 2315.246 ; gain = 852.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:49 . Memory (MB): peak = 2334.414 ; gain = 872.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:49 . Memory (MB): peak = 2335.457 ; gain = 873.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:02:00 . Memory (MB): peak = 2342.227 ; gain = 879.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:02:00 . Memory (MB): peak = 2342.227 ; gain = 879.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:02:00 . Memory (MB): peak = 2342.227 ; gain = 879.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:02:00 . Memory (MB): peak = 2342.227 ; gain = 879.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:02:00 . Memory (MB): peak = 2342.227 ; gain = 879.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:02:00 . Memory (MB): peak = 2342.227 ; gain = 879.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     8|
+|2     |LUT4 |     1|
+|3     |LUT6 |     2|
+|4     |FDRE |     4|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:02:00 . Memory (MB): peak = 2342.227 ; gain = 879.875
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:38 . Memory (MB): peak = 2342.227 ; gain = 786.035
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:02:01 . Memory (MB): peak = 2342.227 ; gain = 879.875
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2354.270 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2400.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 54c41d3d
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:02:32 . Memory (MB): peak = 2400.273 ; gain = 1114.957
+INFO: [Common 17-1381] The checkpoint 'C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_axis_broadcaster_0_0_synth_1/mts_axis_broadcaster_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mts_axis_broadcaster_0_0, cache-ID = c00450c46830b352
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_axis_broadcaster_0_0_synth_1/mts_axis_broadcaster_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mts_axis_broadcaster_0_0_utilization_synth.rpt -pb mts_axis_broadcaster_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 14 07:20:43 2025...

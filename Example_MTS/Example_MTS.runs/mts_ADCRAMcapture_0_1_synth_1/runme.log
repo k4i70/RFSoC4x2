@@ -1,0 +1,346 @@
+
+*** Running vivado
+    with args -log mts_ADCRAMcapture_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mts_ADCRAMcapture_0_1.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source mts_ADCRAMcapture_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1315.617 ; gain = 557.266
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.cache/ip 
+Command: synth_design -top mts_ADCRAMcapture_0_1 -part xczu48dr-fsvg1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-86] Your Synthesis license expires in 29 day(s)
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10368
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1735.891 ; gain = 271.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mts_ADCRAMcapture_0_1' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_ADCRAMcapture_0_1/synth/mts_ADCRAMcapture_0_1.vhd:74]
+	Parameter DWIDTH bound to: 256 - type: integer 
+	Parameter MEM_SIZE_BYTES bound to: 131072 - type: integer 
+INFO: [Synth 8-3491] module 'ADCRAMcapture' declared at 'C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/ip/rtl/ADCRAMcapture.v:7' bound to instance 'U0' of component 'ADCRAMcapture' [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_ADCRAMcapture_0_1/synth/mts_ADCRAMcapture_0_1.vhd:125]
+INFO: [Synth 8-6157] synthesizing module 'ADCRAMcapture' [C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/ip/rtl/ADCRAMcapture.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ADCRAMcapture' (0#1) [C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/ip/rtl/ADCRAMcapture.v:7]
+INFO: [Synth 8-256] done synthesizing module 'mts_ADCRAMcapture_0_1' (0#1) [c:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.gen/sources_1/bd/mts/ip/mts_ADCRAMcapture_0_1/synth/mts_ADCRAMcapture_0_1.vhd:74]
+WARNING: [Synth 8-7129] Port bram_rdata[255] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[254] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[253] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[252] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[251] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[250] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[249] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[248] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[247] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[246] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[245] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[244] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[243] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[242] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[241] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[240] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[239] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[238] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[237] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[236] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[235] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[234] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[233] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[232] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[231] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[230] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[229] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[228] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[227] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[226] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[225] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[224] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[223] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[222] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[221] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[220] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[219] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[218] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[217] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[216] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[215] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[214] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[213] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[212] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[211] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[210] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[209] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[208] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[207] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[206] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[205] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[204] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[203] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[202] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[201] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[200] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[199] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[198] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[197] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[196] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[195] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[194] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[193] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[192] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[191] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[190] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[189] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[188] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[187] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[186] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[185] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[184] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[183] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[182] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[181] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[180] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[179] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[178] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[177] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[176] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[175] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[174] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[173] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[172] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[171] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[170] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[169] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[168] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[167] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[166] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[165] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[164] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[163] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[162] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[161] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[160] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[159] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[158] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[157] in module ADCRAMcapture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_rdata[156] in module ADCRAMcapture is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:41 . Memory (MB): peak = 1797.500 ; gain = 333.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1819.363 ; gain = 355.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1819.363 ; gain = 355.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1819.363 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1925.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.329 . Memory (MB): peak = 1943.512 ; gain = 17.934
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:01:31 . Memory (MB): peak = 1943.512 ; gain = 479.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:01:31 . Memory (MB): peak = 1943.512 ; gain = 479.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1943.512 ; gain = 479.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1943.512 ; gain = 479.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[31] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[30] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[29] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[28] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[27] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[26] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[25] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[24] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[23] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[22] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[21] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[20] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[19] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[18] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port bram_addr[17] driven by constant 0
+INFO: [Synth 8-3917] design mts_ADCRAMcapture_0_1 has port CAP_AXIS_tready driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:01:38 . Memory (MB): peak = 1943.512 ; gain = 479.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:02:14 . Memory (MB): peak = 2317.020 ; gain = 852.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:02:14 . Memory (MB): peak = 2317.168 ; gain = 852.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:02:14 . Memory (MB): peak = 2336.258 ; gain = 871.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:02:21 . Memory (MB): peak = 2343.027 ; gain = 878.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:02:21 . Memory (MB): peak = 2343.027 ; gain = 878.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:02:22 . Memory (MB): peak = 2343.027 ; gain = 878.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:02:22 . Memory (MB): peak = 2343.027 ; gain = 878.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:02:22 . Memory (MB): peak = 2343.027 ; gain = 878.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:02:22 . Memory (MB): peak = 2343.027 ; gain = 878.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     2|
+|2     |LUT1   |     2|
+|3     |LUT3   |     2|
+|4     |LUT4   |     2|
+|5     |LUT5   |     1|
+|6     |LUT6   |     2|
+|7     |FDRE   |   286|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:02:22 . Memory (MB): peak = 2343.027 ; gain = 878.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 257 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:50 . Memory (MB): peak = 2343.027 ; gain = 754.551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:02:22 . Memory (MB): peak = 2343.027 ; gain = 878.699
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2355.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2397.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: de292cfa
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:03:07 . Memory (MB): peak = 2397.191 ; gain = 1081.574
+INFO: [Common 17-1381] The checkpoint 'C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_ADCRAMcapture_0_1_synth_1/mts_ADCRAMcapture_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mts_ADCRAMcapture_0_1, cache-ID = 150dc039734eca3f
+INFO: [Common 17-1381] The checkpoint 'C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_ADCRAMcapture_0_1_synth_1/mts_ADCRAMcapture_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mts_ADCRAMcapture_0_1_utilization_synth.rpt -pb mts_ADCRAMcapture_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 14 07:11:43 2025...

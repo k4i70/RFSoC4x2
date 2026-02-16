@@ -1,0 +1,10 @@
+# Ignore base compiled directory
+base/
+Example_PythonCode/base/
+
+# Ignore venv
+pynq_venv/
+Example_PythonCode/.venv/
+
+
+

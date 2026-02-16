@@ -1,0 +1,42 @@
+{
+  "sample_rate": 4000000000.0,
+  "num_samples": 16384,
+  "duration_s": 4.096e-06,
+  "duration_us": 4.096,
+  "num_components": 3,
+  "components": [
+    {
+      "type": "sine",
+      "frequency": 10009765.625,
+      "amplitude": 1.0,
+      "phase": 0.0,
+      "duty_cycle": 0.5,
+      "rise_time": 0.0,
+      "fall_time": 0.0,
+      "chirp_end_freq": 100000000.0,
+      "chirp_method": "linear"
+    },
+    {
+      "type": "sine",
+      "frequency": 488281.25,
+      "amplitude": 0.5,
+      "phase": 0.0,
+      "duty_cycle": 0.5,
+      "rise_time": 0.0,
+      "fall_time": 0.0,
+      "chirp_end_freq": 100000000.0,
+      "chirp_method": "linear"
+    },
+    {
+      "type": "square",
+      "frequency": 488281.25,
+      "amplitude": 0.5,
+      "phase": 0.0,
+      "duty_cycle": 0.5,
+      "rise_time": 0.0,
+      "fall_time": 0.0,
+      "chirp_end_freq": 100000000.0,
+      "chirp_method": "linear"
+    }
+  ]
+}

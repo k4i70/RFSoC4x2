@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 14 07:12:19 2025
+# Process ID: 12396
+# Current directory: C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_synchronizeSYSREF_0_synth_1
+# Command line: vivado.exe -log mts_synchronizeSYSREF_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mts_synchronizeSYSREF_0.tcl
+# Log file: C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_synchronizeSYSREF_0_synth_1/mts_synchronizeSYSREF_0.vds
+# Journal file: C:/Users/joebe/Documents/RFSoC/RFSoC-MTS-main_ORIGINAL/RFSoC-MTS-main/boards/RFSoC4x2/build_mts/mts/mts.runs/mts_synchronizeSYSREF_0_synth_1\vivado.jou
+# Running On: DESKTOP-IGU5KAN, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 4, Host memory: 17133 MB
+#-----------------------------------------------------------
+source mts_synchronizeSYSREF_0.tcl -notrace

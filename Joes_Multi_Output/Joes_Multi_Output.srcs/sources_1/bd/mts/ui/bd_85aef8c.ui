@@ -1,0 +1,46 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.888836",
+   "Default View_TopLeft":"-143,223",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port s_axi_lite -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_clkRF -pg 1 -lvl 4 -x 1030 -y 420 -defaultsOSRD
+preplace port port-id_clkRFdiv2 -pg 1 -lvl 4 -x 1030 -y 40 -defaultsOSRD
+preplace port port-id_ext_reset_in -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_interrupt -pg 1 -lvl 4 -x 1030 -y 460 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 470 -defaultsOSRD
+preplace portBus PL_CLK -pg 1 -lvl 0 -x 0 -y 530 -defaultsOSRD
+preplace portBus PL_SYSREF -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace portBus UserSYSREF -pg 1 -lvl 4 -x 1030 -y 340 -defaultsOSRD
+preplace portBus bus_struct_reset -pg 1 -lvl 4 -x 1030 -y 10 -defaultsOSRD
+preplace portBus egress_aresetn -pg 1 -lvl 4 -x 1030 -y 180 -defaultsOSRD
+preplace portBus ingress_aresetn -pg 1 -lvl 4 -x 1030 -y 630 -defaultsOSRD
+preplace portBus s_axi_aresetn -pg 1 -lvl 4 -x 1030 -y 490 -defaultsOSRD
+preplace inst BUFG_PL_CLK -pg 1 -lvl 1 -x 140 -y 530 -defaultsOSRD
+preplace inst MTSclkwiz -pg 1 -lvl 2 -x 460 -y 490 -defaultsOSRD
+preplace inst PSreset_control -pg 1 -lvl 2 -x 460 -y 220 -defaultsOSRD
+preplace inst RFegressReset -pg 1 -lvl 3 -x 840 -y 140 -defaultsOSRD
+preplace inst RFingressReset -pg 1 -lvl 3 -x 840 -y 590 -defaultsOSRD
+preplace inst synchronizeSYSREF -pg 1 -lvl 3 -x 840 -y 340 -defaultsOSRD
+preplace netloc BUFG_I_0_1 1 0 1 NJ 530
+preplace netloc MTSclkwiz_interrupt 1 2 2 660J 460 NJ
+preplace netloc PSreset_control_bus_struct_reset 1 2 2 630J 10 NJ
+preplace netloc RFegressReset_peripheral_aresetn 1 3 1 NJ 180
+preplace netloc RFingressReset_peripheral_aresetn 1 3 1 NJ 630
+preplace netloc clk_wiz_0_clk_out1 1 2 2 670 420 NJ
+preplace netloc clk_wiz_0_locked 1 2 1 650 180n
+preplace netloc clk_wiz_adc0_clk_out2 1 2 2 640 40 NJ
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 280 370 630 490 NJ
+preplace netloc src_in_0_1 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc synchronizeSYSREF_dest_out 1 3 1 NJ 340
+preplace netloc util_ds_buf_0_BUFG_O 1 1 2 270 320 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 2 NJ 470 260
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 3 NJ 120 250 120 N
+preplace netloc control_interconnect_M07_AXI 1 0 2 20J 450 NJ
+levelinfo -pg 1 0 140 460 840 1030
+pagesize -pg 1 -db -bbox -sgen -150 -10 1210 690
+"
+}
+

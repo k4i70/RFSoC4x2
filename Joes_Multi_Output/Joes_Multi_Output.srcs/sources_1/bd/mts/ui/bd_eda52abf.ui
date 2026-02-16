@@ -1,0 +1,37 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.07534",
+   "Default View_TopLeft":"-130,-139",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port M_AXIS_1 -pg 1 -lvl 6 -x 1220 -y 340 -defaultsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 30 -defaultsOSRD
+preplace port port-id_aclk -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port port-id_axis_clk -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_enable -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace inst DACRAMstreamer_1 -pg 1 -lvl 2 -x 360 -y 250 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 2 -x 360 -y 70 -defaultsOSRD
+preplace inst axis_clock_converter_1 -pg 1 -lvl 3 -x 660 -y 300 -defaultsOSRD
+preplace inst axis_dwidth_converter_1 -pg 1 -lvl 4 -x 890 -y 320 -defaultsOSRD
+preplace inst axis_register_slice_1 -pg 1 -lvl 5 -x 1100 -y 340 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 3 -x 660 -y 80 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 100 -y 260 -defaultsOSRD
+preplace netloc Net 1 0 5 NJ 90 190 360 530 400 790 400 1000
+preplace netloc Net1 1 0 3 NJ 60 180 340 520J
+preplace netloc clk_wiz_adc1_clk_out1 1 0 5 20J 350 NJ 350 540 410 780 410 990
+preplace netloc enable_1 1 0 2 20J 320 200J
+preplace netloc xlconstant_0_dout 1 1 1 NJ 260
+preplace netloc Conn1 1 5 1 N 340
+preplace netloc DACRAMstreamer_0_BRAM_A 1 2 1 520 90n
+preplace netloc DACRAMstreamer_0_axis 1 2 1 N 260
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 2 1 N 70
+preplace netloc axis_clock_converter_0_M_AXIS 1 3 1 N 300
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 4 1 N 320
+preplace netloc ps8_0_axi_periph_M06_AXI 1 0 2 NJ 30 180J
+levelinfo -pg 1 0 100 360 660 890 1100 1220
+pagesize -pg 1 -db -bbox -sgen -130 -10 1330 420
+"
+}
+0
