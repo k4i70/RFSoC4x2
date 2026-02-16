@@ -1,10 +1,37 @@
-# Ignore base compiled directory
-base/
-Example_PythonCode/base/
+# macOS
+.DS_Store
 
-# Ignore venv
+# Python virtual environments
 pynq_venv/
 Example_PythonCode/.venv/
+__pycache__/
+*.pyc
+
+# Vivado build directories (huge, regenerated from source)
+*.runs/
+*.gen/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.cache/
+*.data/
+
+# Vivado intermediate/log files
+*.dcp
+*.rpt
+*.log
+*.jou
+*.str
+*.xml
+*.backup.*
+vivado_*.backup.jou
+vivado_*.backup.log
+
+# KEEP these files (needed for deployment):
+# - *.bit (bitstream - the compiled FPGA configuration)
+# - *.hwh (hardware handoff - describes the hardware to PYNQ)
+# - *.xpr (Vivado project file)
+# - source .tcl, .py, .ipynb files
 
 
 
